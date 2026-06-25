@@ -1,7 +1,7 @@
 services:
   vm3-discovery:
     build: .
-    image: vm3-discovery:1.0
+    image: danielpmarchesi/vm3labredes:v1
     container_name: vm3-discovery
     network_mode: host
     privileged: true
