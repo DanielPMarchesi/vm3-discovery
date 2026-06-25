@@ -1,0 +1,13 @@
+services:
+  vm3-discovery:
+    build: .
+    image: vm3-discovery:1.0
+    container_name: vm3-discovery
+    network_mode: host
+    privileged: true
+    restart: unless-stopped
+    volumes:
+      - .:/app
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: python -u scanner.py

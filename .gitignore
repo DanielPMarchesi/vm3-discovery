@@ -1,0 +1,27 @@
+# Arquivos gerados pelo scanner
+inventory*.json
+estado*.json
+*.log
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+
+# Docker temporário
+get-docker.sh
+
+# SSH / chaves / segredos
+.ssh/
+*.pem
+*.key
+id_rsa
+id_rsa.pub
+id_ed25519
+id_ed25519.pub
+
+# Variáveis de ambiente
+.env
